@@ -12,18 +12,18 @@ Please refer to [Getting Started](https://getcomposer.org/doc/00-intro.md) on ho
 
 After you have downloaded/installed Composer, run
 
-`php composer.phar require peppeocchi/php-cron-scheduler`
+`php composer.phar require neomasterr/php-cron-scheduler`
 
 or add the package to your `composer.json`
 ```json
 {
     "require": {
-        "peppeocchi/php-cron-scheduler": "4.*"
+        "neomasterr/php-cron-scheduler": "4.*"
     }
 }
 ```
 
-Scheduler V4 requires php >= 7.3, please use the [v3 branch](https://github.com/peppeocchi/php-cron-scheduler/tree/v3.x) for php versions < 7.3 and > 7.1 or the [v2 branch](https://github.com/peppeocchi/php-cron-scheduler/tree/v2.x) for php versions < 7.1.
+Scheduler V4 requires php >= 7.3, please use the [v3 branch](https://github.com/neomasterr/php-cron-scheduler/tree/v3.x) for php versions < 7.3 and > 7.1 or the [v2 branch](https://github.com/neomasterr/php-cron-scheduler/tree/v2.x) for php versions < 7.1.
 
 ## How it works
 
@@ -65,7 +65,7 @@ $scheduler->php('path/to/my/script.php');
 The `php` method accepts 4 arguments:
 - The path to your php script
 - The PHP binary to use
-- Arguments to be passed to the script (**NOTE**: You need to have **register_argc_argv** enable in your php.ini for this to work ([ref](https://github.com/peppeocchi/php-cron-scheduler/issues/88)). Don't worry it's enabled by default, so unless you've intentionally disabled it or your host has it disabled by default, you can ignore it.)
+- Arguments to be passed to the script (**NOTE**: You need to have **register_argc_argv** enable in your php.ini for this to work ([ref](https://github.com/neomasterr/php-cron-scheduler/issues/88)). Don't worry it's enabled by default, so unless you've intentionally disabled it or your host has it disabled by default, you can ignore it.)
 - Identifier
 ```php
 $scheduler->php(
@@ -435,7 +435,7 @@ $scheduler->resetRun()
 
 ### Faking scheduler run time
 When running the scheduler you might pass an `DateTime` to fake the scheduler run time.
-The resons for this feature are described [here](https://github.com/peppeocchi/php-cron-scheduler/pull/28);
+The resons for this feature are described [here](https://github.com/neomasterr/php-cron-scheduler/pull/28);
 
 ```
 // ...
